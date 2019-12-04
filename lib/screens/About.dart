@@ -10,8 +10,13 @@ class About extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            CircleAvatar(
+              backgroundImage: Image.asset(Assets.moon).image,
+            ),
             Text('Tanishq Malhotra'),
-            SizedBox(height: 5,),
+            SizedBox(
+              height: 5,
+            ),
             Text('Flutter, Machine Learning, Deep Learning, Nodejs')
           ],
         ),
