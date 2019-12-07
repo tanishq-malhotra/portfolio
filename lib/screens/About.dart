@@ -11,7 +11,7 @@ class About extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
-              backgroundImage: Image.asset(Assets.moon).image,
+              backgroundImage: Image.asset(Assets.fb).image,
             ),
             Text('Tanishq Malhotra'),
             SizedBox(
