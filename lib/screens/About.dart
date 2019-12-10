@@ -11,13 +11,25 @@ class About extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
-              backgroundImage: Image.asset(Assets.fb).image,
+              backgroundImage: Image.asset(Assets.avatar).image,
+              radius: 100,
             ),
-            Text('Tanishq Malhotra'),
             SizedBox(
-              height: 5,
+              height: 20,
             ),
-            Text('Flutter, Machine Learning, Deep Learning, Nodejs')
+            Text(
+              'Tanishq Malhotra',
+              textScaleFactor: 4,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              'Android, Flutter, Machine Learning,\n Deep Learning, Nodejs',
+              textAlign: TextAlign.center,
+              textScaleFactor: 2,
+              style: Theme.of(context).textTheme.caption,
+            ),
           ],
         ),
       ),
