@@ -6,4 +6,5 @@ class Assets {
   static const moon = 'assets/icons/moon.png';
   static const avatar = 'assets/icons/avatar.jpg';
   static const expTrack = 'assets/icons/expense-tracker.png';
+  static const doc = 'assets/icons/doc.png';
 }
