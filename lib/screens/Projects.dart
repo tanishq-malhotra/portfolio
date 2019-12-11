@@ -8,15 +8,18 @@ class Projects extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveScreen(
-      largeScreen: GridView(
-        padding: EdgeInsets.all(20),
-        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 200,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
-          childAspectRatio: 3 / 2,
+      largeScreen: GridView.count(
+        crossAxisCount: 3,
+        padding: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
+        childAspectRatio: MediaQuery.of(context).size.width / (MediaQuery.of(context).size.height / 1.2),
+        children: List.generate(
+          projects.length,
+          (index) => ProjectCard(projects[index]),
         ),
-        children: projects.map((data) => ProjectCard(data)).toList(),
+      ),
+      smallScreen: ListView.builder(
+        itemCount: projects.length,
+        itemBuilder: (ctx, index) => ProjectCard(projects[index]),
       ),
     );
   }
