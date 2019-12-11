@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:tanishq/widgets/theme_switcher.dart';
 
 import './About.dart';
 import './Projects.dart';
+import '../config/assets.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -10,17 +12,30 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedTabIndex = 0;
-  final List<Widget> _tabsScreen = [About(), Projects(),];
+  final List<Widget> _tabsScreen = [
+    About(),
+    Projects(),
+  ];
 
   void changeTab(int index) {
     setState(() {
       _selectedTabIndex = index;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: <Widget>[
+          IconButton(
+            icon: ThemeSwitcher.of(context).isDarkModeOn
+                ? Icon(Icons.wb_sunny)
+                : Image.asset(Assets.moon),
+            onPressed: () => ThemeSwitcher.of(context).switchDarkMode(),
+          ),
+        ],
+      ),
       body: Center(
         child: _tabsScreen[_selectedTabIndex],
       ),
@@ -33,7 +48,7 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.mobile_screen_share),
             title: Text('Projects'),
-          ), 
+          ),
         ],
         currentIndex: _selectedTabIndex,
         onTap: changeTab,
