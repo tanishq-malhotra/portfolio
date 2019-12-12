@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tanishq/widgets/theme_switcher.dart';
+import '../widgets/theme_switcher.dart';
 
 import './About.dart';
 import './Projects.dart';

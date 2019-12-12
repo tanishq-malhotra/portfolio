@@ -22,7 +22,10 @@ class ThemeSwitcher extends InheritedWidget {
 class ThemeSwitcherWidget extends StatefulWidget {
   final bool initialDarkMode;
   final Widget child;
-  ThemeSwitcherWidget({Key key, this.initialDarkMode, this.child});
+  ThemeSwitcherWidget({Key key, this.initialDarkMode, this.child})
+      : assert(initialDarkMode != null),
+        assert(child != null),
+        super(key: key);
   @override
   _ThemeSwitcherWidgetState createState() => _ThemeSwitcherWidgetState();
 }
