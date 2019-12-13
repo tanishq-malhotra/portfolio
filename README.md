@@ -2,10 +2,10 @@
 
 This is my portfolio app made using flutter web.
 
-## Features
+## Components
 
-- [Dark-Mode Switcher]
-- [Project's Tab]
+- Dark-Mode Switcher
+- Project's Tab
 
 
 ## [Compiled version of this app](https://github.com/tanishq-malhotra/tanishq-malhotra.github.io)
