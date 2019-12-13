@@ -8,7 +8,7 @@ This is my portfolio app made using flutter web.
 - [Project's Tab]
 
 
-# - [Compiled version of this app](https://github.com/tanishq-malhotra/tanishq-malhotra.github.io)
+## [Compiled version of this app](https://github.com/tanishq-malhotra/tanishq-malhotra.github.io)
 
 ## Website hosted at
 
