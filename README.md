@@ -1,16 +1,15 @@
-# tanishqmalhotra
+# Portfolio
 
-A new Flutter project.
+This is my portfolio app made using flutter web.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- [Dark-Mode Switcher]
+- [Project's Tab]
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# - [Compiled version of this app](https://github.com/tanishq-malhotra/tanishq-malhotra.github.io)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Website hosted at
+
+- [https://tanishq-malhotra.github.io](https://tanishq-malhotra.github.io)
