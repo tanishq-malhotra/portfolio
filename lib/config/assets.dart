@@ -7,4 +7,10 @@ class Assets {
   static const avatar = 'assets/icons/avatar.jpg';
   static const expTrack = 'assets/icons/expense-tracker.png';
   static const doc = 'assets/icons/doc.png';
+  static const chatbot = 'assets/icons/chatbot.png';
+  static const hand = 'assets/icons/hand-mouse.png';
+  static const mario = 'assets/icons/mario.png';
+  static const pcSnake = 'assets/icons/pc-snake.png';
+  static const snake = 'assets/icons/snake.png';
+  static const sudoku = 'assets/icons/sudoku.png';
 }
