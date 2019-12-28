@@ -9,7 +9,7 @@ This is my portfolio app made using flutter web.
 - About Tab
 
 
-## [Compiled version of this app](https://github.com/tanishq-malhotra/tanishq-malhotra.github.io)
+## [Compiled version of this app](https://github.com/tanishq-malhotra/portfolio)
 
 ## Website hosted at
 
